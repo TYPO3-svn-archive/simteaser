@@ -1,0 +1,80 @@
+plugin.tx_simteaser {
+	view {
+		templateRootPath = {$plugin.tx_simteaser.view.templateRootPath}
+		partialRootPath = {$plugin.tx_simteaser.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_simteaser.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_simteaser.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_simteaser._CSS_DEFAULT_STYLE (
+	.tx-simteaser-contentwrap {
+		overflow:hidden;
+		margin:auto;
+	}
+	.tx-simteaser-itemwrap {
+		overflow:hidden;
+		float:left;
+		height:100%;
+	}
+	.tx-simteaser-item {
+		position:relative;
+		overflow:hidden;
+		height:100%;
+		background-position:center center;
+		background-repeat:no-repeat;
+	}
+	.tx-simteaser-textwrap {
+		width:100%;
+		height:100%;
+	}
+	.tx-simteaser-text {
+		position:absolute;
+		width:100%;
+		bottom:0;
+		line-height:2em;
+		font-size:150%;
+		text-align:center;
+	}
+	.tx-simteaser-textnormal {
+		color:#000;
+		background:transparent url(/typo3conf/ext/simteaser/Resources/Public/Images/textbg-white-50.png) left top repeat-x;
+	}
+	.tx-simteaser-text:hover {
+		color:#fff;
+		background:transparent url(/typo3conf/ext/simteaser/Resources/Public/Images/textbg-blue3-50.png) left top repeat-x;
+	}
+	.tx-simteaser-texthover {
+		color:#fff;
+		background:transparent url(/typo3conf/ext/simteaser/Resources/Public/Images/textbg-blue3-50.png) left top repeat-x;
+	}
+
+)
+
+
+
+includeLibs.t3jquery = EXT:t3jquery/class.tx_t3jquery.php
+page.1000020 = USER
+page.1000020 {
+	userFunc = tx_t3jquery->addJS
+	compress = 1
+	tofooter = 1
+	jsdata (
+$(document).ready(function() {
+	$('.tx-simteaser-item').mouseover(function(e) {
+		$(e.target).children('.tx-simteaser-text').removeClass('tx-simteaser-textnormal');
+		$(e.target).children('.tx-simteaser-text').addClass('tx-simteaser-texthover');
+	});
+	$('.tx-simteaser-item').mouseout(function (e) {
+		$(e.target).children('.tx-simteaser-text').removeClass('tx-simteaser-texthover');
+		$(e.target).children('.tx-simteaser-text').addClass('tx-simteaser-textnormal');
+	})
+});
+)
+}

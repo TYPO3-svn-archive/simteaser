@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'simteaser'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">            
+			<label index="tx_simteaser_domain_model_widget">Widget</label>
+			<label index="tx_simteaser_domain_model_widget.items">Items</label>
+			<label index="pi_flexform.items">Items</label>
+			<label index="pi_flexform.item.images">Images</label>
+			<label index="pi_flexform.item.texts">Image texts</label>
+			<label index="pi_flexform.item.links">Image links (page uid)</label>
+			<label index="pi_flexform.widget">Widget</label>
+			<label index="pi_flexform.widget.width">Total width</label>
+			<label index="pi_flexform.widget.height">Total height</label>			
+		</languageKey>
+		<languageKey index="de" type="array">            
+			<label index="tx_simteaser_domain_model_widget">Widget</label>
+			<label index="tx_simteaser_domain_model_widget.items">Items</label>
+			<label index="pi_flexform.items">Elemente</label>
+			<label index="pi_flexform.item.images">Bilder</label>
+			<label index="pi_flexform.item.texts">Bildtexte</label>
+			<label index="pi_flexform.item.links">Bildlinks (Seiten-UID)</label>
+			<label index="pi_flexform.widget">Komponente</label>
+			<label index="pi_flexform.widget.width">Gesamtbreite</label>
+			<label index="pi_flexform.widget.height">Gesamthöhe</label>			
+		</languageKey>
+		<languageKey index="es" type="array">            
+			<label index="tx_simteaser_domain_model_widget">Widget</label>
+			<label index="tx_simteaser_domain_model_widget.items">Items</label>
+			<label index="pi_flexform.items">Elementos</label>
+			<label index="pi_flexform.item.images">Imagenes</label>
+			<label index="pi_flexform.item.texts">Textos de imagenes</label>
+			<label index="pi_flexform.item.links">Enlaces de imagenes (uid de página)</label>
+			<label index="pi_flexform.widget">Componente</label>
+			<label index="pi_flexform.widget.width">Ancho total</label>
+			<label index="pi_flexform.widget.height">Altura total</label>			
+		</languageKey>
+	</data>
+</T3locallang>
