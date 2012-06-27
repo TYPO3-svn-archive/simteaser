@@ -1,10 +1,10 @@
 <div class="tx-simteaser-pi1">
 	<div class="tx-simteaser-contentwrap" style="width:{widget.width};">
-		<div class="tx-simteaser-content" style="height:{widget.height};>
+		<div class="tx-simteaser-content" style="height:{widget.height};">
 			<f:for each="{items}" as="item">
 				<div class="tx-simteaser-itemwrap" style="width:{item.width};">
 					<f:link.page pageUid="{item.link}">
-						<div class="tx-simteaser-item" style="background-image:url(/uploads/tx_simteaser/{item.image});">
+						<div class="tx-simteaser-item" style="background-image:url(/uploads/tx_simteaser/{item.image}); height:{widget.height};">
 							<div class="tx-simteaser-textwrap">
 								<div class="tx-simteaser-text tx-simteaser-textnormal">{item.text}</div>
 							</div>
