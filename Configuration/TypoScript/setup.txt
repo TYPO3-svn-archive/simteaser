@@ -60,8 +60,8 @@ plugin.tx_simteaser._CSS_DEFAULT_STYLE (
 
 
 includeLibs.t3jquery = EXT:t3jquery/class.tx_t3jquery.php
-page.1000020 = USER
-page.1000020 {
+page.2202 = USER
+page.2202 {
 	userFunc = tx_t3jquery->addJS
 	compress = 1
 	tofooter = 1
